@@ -1,0 +1,10 @@
+Coverage Report Totals BY INSTANCES: Number of Instances 28
+
+    Enabled Coverage              Bins      Hits    Misses    Weight  Coverage
+    ----------------              ----      ----    ------    ------  --------
+    Assertions                      53        49         4         1    92.45%
+    Covergroups                      7        na        na         1    91.72%
+        Coverpoints/Crosses         22        na        na         1        na
+            Covergroup Bins        473       140       333         1    29.59%
+Total coverage (filtered view): 92.08%
+
