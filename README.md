@@ -30,3 +30,13 @@ The script compiles design and testbench sources, runs a configurable list of UV
 Place the `regression.tcl` (the DO-file) at the root of the testbench folder.
 
 Expected layout:
+UVM_Environment/
+└── 5th/
+└── aligner/
+├── Design/
+│ └── design.sv
+├── TB/
+│ ├── TB.sv
+│ └── messages.f
+├── regression.tcl # <- this script
+└── Simulation_Reports/ # created automatically if missing
