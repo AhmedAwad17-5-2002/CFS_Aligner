@@ -27,16 +27,24 @@ The script compiles design and testbench sources, runs a configurable list of UV
 ---
 
 ## Repository layout
-Place the `regression.tcl` (the DO-file) at the root of the testbench folder.
+Place the `regression.tcl` (the DO-file) at the root of the 
+---
 
-Expected layout:
-UVM_Environment
-└── 5th
-└── aligner
-├── Design
-│ └── design.sv
-├── TB
-│ ├── TB.sv
-│ └── messages.f
-├── regression.tcl # <- this script
-└── Simulation_Reports/ # created automatically if missing
+## Script configuration variables
+Edit the top of `regression.tcl` to match your environment:
+
+- `DESIGN_PATH` — path to design files (e.g. `.../Design`)  
+- `TB_PATH` — path to testbench files (e.g. `.../TB`)  
+- `WORK_DIR` — simulation work library (default: `work`)  
+- `SIM_DIR` — parent folder for run results (default: `Simulation_Reports`)  
+- `UVM_VER` — UVM version label used (example: `uvm-1.2`)  
+- `multi_iter_tests` — TCL list of UVM test names to run, e.g.  
+  ```tcl
+  set multi_iter_tests {
+      test_reg_access
+      md_random_test
+      algn_test_random_rx_err
+  }
+ folder.
+
+
