@@ -1,7 +1,3 @@
-Here’s your `README.md` file — perfectly formatted and ready to drop into your repo:
-
----
-
 ```markdown
 # Questa UVM Regression Script — Aligner Project
 
